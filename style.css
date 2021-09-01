@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'STIX Two Math', serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: darkcyan;
+}
+    
+/* ***************************  HEADER ************************************************** */
+.nav-bar .container{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+    height: 9vh;
+    padding: 10px;
+    padding-right: 30px;
+    margin: auto;
+    background-color: rgb(114, 224, 243);
+}
+.nav-bar .container .logo{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-bar .container .logo img{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+.nav-bar .container .logo h1{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(145, 16, 102);
+}
+/* *****************************   Header Close ***********************************************/
+/* *********************************  MAIN BODY ************************************************ */
+.main-body{
+    width: 70%;
+    height: 74vh;
+    padding: 20px;
+    margin: auto;
+    background-color: floralwhite;
+}
+/* ************************************ CALCULATOR ************************************************ */
+ .calculator-box{
+    width: 300px;
+    margin: auto;
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.calculator-box .display{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(135deg, #434343 10%, #000000 100%);
+}
+.previous-operand {
+    width: 100%;
+    height: 20%;
+    color: ghostwhite;
+    font-weight: 500;
+    text-align: right;
+    padding-top: 15px;
+    font-size: x-large;
+    color: lightgrey;
+}
+.current-operand {
+    width: 100%;
+    height: 80%;
+    font-size:xxx-large;
+    color: ghostwhite;
+    font-weight: 500;
+    text-align: right;
+    padding-top: 15px;
+}
+.calculator-box .calculator-buttons{
+    height: fit-content;
+    display: inline-block;
+    background-color: rgba(185, 229, 245, 0.671);
+    width: fit-content;
+    
+}
+.calculator-box .calculator-buttons .row1, .row2, .row3, .row4, .row5{
+    display: inline-block;
+    width: fit-content;
+}
+button{
+    cursor: pointer;
+    width: 72px;
+    height: 50px;
+    border: 0;
+    padding: 3px;
+    font-size: 1.8rem;
+    background-color: rgba(166, 225, 247, 0.76);
+    border-top: 1px solid  rgba(185, 229, 245, 0.671); 
+    border-bottom: 2px solid  rgba(185, 229, 245, 0.671); 
+    
+}
+button:hover{
+    background-color: rgba(240, 246, 248, 0.65);
+    transition: background-color 0.5s ease-in-out;
+} 
+.span-2:hover{
+    background-color: orange;
+    transition: background-color 0.5s ease-in-out;
+}
+.del:hover{
+    background-color: #f08080;
+    transition: background-color 0.5s ease-in-out;
+}
+.equals:hover{
+    background-color: #52f3a2;
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+/* ************************************CALCULATOR CLOSE ***************************************** */
+/* ******************************* MAIN BODY CLOSE ************************************************** */
+/* ****************************************** FOOTER ************************************************** */
+footer{
+    width: 70%;
+    height: 5vh;
+    padding: 20px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    background-color: rgb(114, 224, 243);
+}
+footer .my-footer{
+    margin: auto;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.my-footer img{
+    width: 15px;
+    height: 15px;
+    padding:  3px;
+}
+/* ****************************************** FOOTER CLOSE ************************************************** */
