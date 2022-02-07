@@ -129,13 +129,12 @@ button:hover{
     }
     .calculator-box .calculator-buttons{
         display: grid;
-        grid-template-columns: repeat(4, 9vw);
-        grid-template-rows: repeat(5, 7vw);
+        grid-template-columns: repeat(4, 13vw);
+        grid-template-rows: repeat(5, 12vw);
         
     }
-    .nav-bar .logo img{
-        height: 20px;
-        width: 20px;
+    .calculator-box .display{
+        width:103%;
     }
     .calculator-box .display{
         height: 10vh;
