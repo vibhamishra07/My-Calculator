@@ -126,19 +126,19 @@ operationButtons.forEach(button => {
 })
 
 // when user clicks on equal button for computation
-equalsButton.addEventListener('click', button => {
+equalsButton.addEventListener('click', () => {
     mycalculator.computation()
     mycalculator.updateDisplay()
 })
 
 // when user clicks on AC button
-allClearButton.addEventListener('click', button => {
+allClearButton.addEventListener('click', () => {
     mycalculator.allclear()
     mycalculator.updateDisplay()
 })
 
 // when user clicks on delete button
-deleteButton.addEventListener('click', button => {
+deleteButton.addEventListener('click', () => {
     mycalculator.delete()
     mycalculator.updateDisplay()
 })
