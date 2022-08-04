@@ -12,6 +12,9 @@ body{
     width: 100%;
     background-color: rgb(176, 220, 250);
 }
+html{
+    font-size: 60%;
+}
     
 /* ***************************  Nav bar ************************************************** */
 .nav-bar{
@@ -32,7 +35,8 @@ body{
 }
 .nav-bar .logo h1{
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
     margin-left: 10px;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgb(246, 107, 239);
@@ -42,7 +46,7 @@ body{
 /* ************************************ CALCULATOR ************************************************ */
 .calculator-box{
     position: absolute;
-    width: 50vw;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,9 +59,8 @@ body{
 .calculator-box .display{
     border-top: 1px solid white;
     border-radius: 20px 20px 0 0;
-    width: 71.5%;
-    height: 15vh;
-    padding-right: 2px;
+    width: 100%;
+    height: 20vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -65,26 +68,29 @@ body{
     background-image: linear-gradient(135deg, #434343 10%, #000000 100%);
 }
 .previous-operand {
-    width: 100%;
+    /* width: 100%; */
+    padding:0 5px 0 5px; 
     color: ghostwhite;
     font-weight: 500;
     text-align: right;
     padding-top: 10px;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: lightgrey;
 }
 .current-operand {
-    font-size:xx-large;
-    
+    padding:0 5px 0 5px; 
+    font-size:2.5rem;
     color: ghostwhite;
     font-weight: 500;
     text-align: right;
 }
 .calculator-box .calculator-buttons{
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 9vw);
-    grid-template-rows: repeat(5, 4vw);
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, 10vh);
     border-bottom: 1px solid white;
+    /* border-right: 1px solid white; */
     border-radius: 0 0 20px 20px;
     overflow: hidden;
 
@@ -93,7 +99,7 @@ button{
     position: relative;
     cursor: pointer;
     border: none;
-    font-size: 2em;
+    font-size: 2rem;
     color: white;
     text-shadow: 2px 2px 4px black;
     background-color: rgb(37, 147, 190)
@@ -120,23 +126,14 @@ button:hover{
 
 /* ************************************CALCULATOR CLOSE ***************************************** */
 
-@media  only screen and (max-width:900px) {
-    button.del, button.span-2 {
-        font-size: 0.9rem;
+@media  only screen and (max-width:600px) {
+    .calculator-box{
+        width:70%;
+        height: 70%;
     }
+}
+@media  only screen and (max-width:300px) {
     button{
         font-size: 1rem;
-    }
-    .calculator-box .calculator-buttons{
-        display: grid;
-        grid-template-columns: repeat(4, 13vw);
-        grid-template-rows: repeat(5, 12vw);
-        
-    }
-    .calculator-box .display{
-        width:103%;
-    }
-    .calculator-box .display{
-        height: 10vh;
     }
 }
