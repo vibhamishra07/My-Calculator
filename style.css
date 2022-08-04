@@ -97,6 +97,10 @@ html{
 
 }
 button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     position: relative;
     cursor: pointer;
     border: none;
